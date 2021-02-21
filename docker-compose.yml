@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+  api:
+    build: .
+    image: brandikuritz/jnv-api:dev
+    command: bash -c "uwsgi --http :8000 --module jnv.wsgi"
+    volumes:
+    - .:/code
+    ports:
+    - "8000:8000"
+    depends_on:
+      - db
+    container_name: jnv-api
+
+  db:
+    image: postgres:13.2
+    environment:
+      POSTGRES_PASSWORD: veBSI1985
+      POSTGRES_DB: jnv-db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data/
+    ports:
+    - "5432:5432"
+    container_name: jnv-postgres
+
+volumes:
+  postgres_data:
+
