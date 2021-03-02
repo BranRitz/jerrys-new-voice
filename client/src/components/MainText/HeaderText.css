@@ -1,0 +1,15 @@
+.HeaderText {
+    align-items: center;
+    text-align: center;
+    font-size: 5vw;
+    color: white;
+    padding: 20px;
+    background-color: #778899;
+    border-radius: 4px;
+}
+
+@media screen and (min-width: 600px) {
+  .HeaderText {
+     font-size: 2.2rem;
+  }
+}

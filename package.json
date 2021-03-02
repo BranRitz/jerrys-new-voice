@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "radium": "^0.26.1",
+    "styled-components": "^5.2.1"
+  }
+}
