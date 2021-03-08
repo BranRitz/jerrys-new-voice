@@ -1,6 +1,7 @@
 import React from 'react';
 import './History.css';
 import HeaderText from "../HeaderText/HeaderText";
+import BodyText from "../BodyText"
 
 const History = (props) => {
 
@@ -8,9 +9,8 @@ const History = (props) => {
             <div className="AllText">
                 <div className="AboutText">
                     <HeaderText HeaderName="Your Session History" />
-                    <p className="BodyText">{ props.BodyText }</p>
+                    <p className="BodyText">{ BodyText.HistoryText }</p>
                 </div>
-                <img className="MicrophoneImage" src={'../../../static/public/microphone.jpeg'} />
             </div>
     );
 }

@@ -3,9 +3,6 @@
     box-sizing: border-box;
 }
 
-.AllText {
-    display: flex;
-}
 
 .AllText .AboutText {
     float: left;
@@ -21,7 +18,6 @@
     margin-right:30px;
     margin-bottom: 70px;
     line-height:2;
-    flex: 1;
     text-align: center;
     border-radius: 4px;
 }
@@ -34,29 +30,5 @@
     color: black;
     width: 100%;
     padding-top: 20px;
-}
-
-.AllText .MicrophoneImage {
-    width: auto;
-    height: auto;
-    max-height: 50%;
-    max-width: 45%;
-    padding-left: 5px;
-    padding-right: 70px;
-    max-height: 600px;
-    margin:50px;
-    margin-right:30px;
-    margin-bottom: 70px;
-    line-height:2;
-    flex: 2;
-    border-radius: 4px;
-
-}
-
-@media screen and (max-width: 800px) {
-    .SampleText .MicrophoneImage {
-            display: none;
-        }
-
 }
 

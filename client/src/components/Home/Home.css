@@ -54,7 +54,7 @@
 }
 
 @media screen and (max-width: 800px) {
-    .SampleText .MicrophoneImage {
+    .AllText .MicrophoneImage {
             display: none;
         }
 

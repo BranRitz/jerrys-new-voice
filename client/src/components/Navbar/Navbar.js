@@ -45,13 +45,12 @@ class Navbar extends Component {
                         <Button>Login</Button>
                         <Button>Sign Up</Button>
                     </nav>
-
-                    <Route path="/" exact component={ Home } />
-                    <Route path="/history" exact component={ History } />
-                    <Route path="/analysis" exact component={ Analysis } />
-                    <Route path="/help" exact component={ Help } />
-
-
+                    <Switch>
+                        <Route path="/" exact component={ Home } />
+                        <Route path="/history" exact component={ History } />
+                        <Route path="/analysis" exact component={ Analysis } />
+                        <Route path="/help" exact component={ Help } />
+                    </Switch>
                 </div>
             </Router>
         )
