@@ -1,13 +1,12 @@
 import React from 'react';
-import './MainText.css';
-import HeaderText from "./HeaderText";
+import './Home.css';
+import HeaderText from "../HeaderText/HeaderText";
 
-
-const MainText = (props) => {
+const Home = (props) => {
 
     return (
-            <div className="SampleText">
-                <div className="AllText">
+            <div className="AllText">
+                <div className="AboutText">
                     <HeaderText HeaderName="About Jerry's New Voice" />
                     <p className="BodyText">{ props.BodyText }</p>
                 </div>
@@ -16,4 +15,4 @@ const MainText = (props) => {
     );
 }
 
-export default MainText;
+export default Home;

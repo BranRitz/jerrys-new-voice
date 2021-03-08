@@ -1,37 +1,37 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url: '#',
+        url: '/',
         cName: 'nav-links-home'
     },
     {
         title: 'Start Session',
-        url: '#',
+        url: '/start-session',
         cName: 'nav-links'
     },
     {
         title: 'History',
-        url: '#',
+        url: '/history',
         cName: 'nav-links'
     },
     {
         title: 'Progress Analysis',
-        url: '#',
+        url: '/analysis',
         cName: 'nav-links'
     },
     {
         title: 'Help',
-        url: '#',
+        url: '/help',
         cName: 'nav-links'
     },
     {
         title: 'Login',
-        url: '#',
+        url: '/login',
         cName: 'nav-links-signup'
     },
     {
         title: 'Sign Up',
-        url: '#',
+        url: '/signup',
         cName: 'nav-links-signup'
     }
 ]

@@ -3,11 +3,11 @@
     box-sizing: border-box;
 }
 
-.SampleText {
+.AllText {
     display: flex;
 }
 
-.SampleText .AllText {
+.AllText .AboutText {
     float: left;
     background-color: lightblue;
     width: auto;
@@ -26,7 +26,7 @@
     border-radius: 4px;
 }
 
-.SampleText .AllText .BodyText {
+.AllText .AboutText .BodyText {
     float: left;
     background-color: lightblue;
     align-items: center;
@@ -36,7 +36,7 @@
     padding-top: 20px;
 }
 
-.SampleText .MicrophoneImage {
+.AllText .MicrophoneImage {
     width: auto;
     height: auto;
     max-height: 50%;
