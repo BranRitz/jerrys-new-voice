@@ -1,6 +1,7 @@
 import React from 'react';
 import './Help.css';
 import HeaderText from "../HeaderText/HeaderText";
+import ContactForm from './ContactForm';
 
 const Help = (props) => {
 
@@ -14,7 +15,9 @@ const Help = (props) => {
                         <li> > Is this site actively maintained? </li><br/>
                     </ul>
                 </div>
-                <img className="MicrophoneImage" src={'../../../static/public/microphone.jpeg'} />
+                <div className="ContactFormElem">
+                    <ContactForm />
+                </div>
             </div>
     );
 }
