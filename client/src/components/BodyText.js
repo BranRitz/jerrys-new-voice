@@ -5,7 +5,7 @@ const HomeText = `Jerry's New Voice (JNV) provides a platform for those who need
 
 const HistoryText = "Coming Soon - Spring 2021!"
 
-const AnalysisText = "Coming Soon - Spring 2021!"
+const AnalysisText = "Progress Analysis to be implemented later in 2021."
 
 const BodyText = {
     "HomeText": HomeText,

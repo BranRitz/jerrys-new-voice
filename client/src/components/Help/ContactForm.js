@@ -1,10 +1,30 @@
 import React, { useState } from 'react';
+import * as emailjs from 'emailjs-com'
 
 const ContactForm = (props) => {
-    const handleSubmit= (e) => {
-          e.preventDefault();
-          // ???
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let templateParams = {
+            from_name: userName,
+            message: userMsg,
+            user_email: userEmail
         }
+
+        emailjs.send(
+            'service_fdpnb6b',
+            'template_hspidxn',
+            templateParams,
+            'user_VyRKRWpp0mtXrVNe1chAI'
+        ).then(
+            function(response) {
+                alert("Email Successfully Sent!");
+            },
+            function(err) {
+                alert("Email was not able to send.");
+            }
+        )
+        e.target.reset();
+    }
 
     const [userName, setUserName] = useState();
     const [userEmail, setUserEmail] = useState();
@@ -12,7 +32,9 @@ const ContactForm = (props) => {
 
     return (
       <form onSubmit={e => {handleSubmit(e)}}>
-            <h1>Contact Me</h1>
+            <div className="HeaderText">
+                <h1 className="ContactMe">Contact Me</h1>
+            </div>
             <label>Your Name:</label><br />
             <input
                 name="UserName"
@@ -32,7 +54,7 @@ const ContactForm = (props) => {
                 placeholder="Hi, Brandi!"
                 onChange={e => setUserMsg(e.target.value)}
             /><br />
-            <input type="submit" value="Submit" />
+            <input className="SubmitButton" type="submit" value="Submit" />
         </form>
     );
 }
