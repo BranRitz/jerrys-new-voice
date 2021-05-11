@@ -133,8 +133,6 @@ class Signup extends React.Component {
     }
 }
 
-const WrappedAuth = Form.create()(Signup);
-
 const mapStateToProps = state => {
     return {
         loading: state.loading,

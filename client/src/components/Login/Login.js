@@ -73,8 +73,6 @@ class Login extends React.Component {
     }
 }
 
-const WrappedAuth = Form.create()(Login);
-
 const mapStateToProps = state => {
     return {
         loading: state.loading,
